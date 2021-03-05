@@ -12,9 +12,7 @@
     "discord.js": "^12.5.1"
   },
   "pkg": {
-    "scripts": [
-
-    ],
+    "scripts": [],
     "assets": [
       "./config.json"
     ]
