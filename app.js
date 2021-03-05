@@ -4,7 +4,7 @@ const config = require("./config.json")
 
 const bot = new Discord.Client()
 
-console.log(BOT_TOKEN)
+console.log(config.BOT_TOKEN)
 console.log(config.BOT_TOKEN)
 
 bot.on("ready", () => {
@@ -16,4 +16,4 @@ bot.on("message", (mes) => {
     if(mes.content === "hi") mes.reply("hey")
 })
 
-bot.login(BOT_TOKEN)
+bot.login(config.BOT_TOKEN)
