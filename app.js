@@ -10,7 +10,7 @@ let channel
 
 
 bot.on("ready", () => {
-    channel = bot.channels.cache.get("814205626238238773")
+    channel = bot.channels.fetch(c => c.id === "814205626238238773")
     console.log(`discord bot ready.`)
     setInterval(() => channel.send(`hi hey hello`), 10000)
 })
