@@ -5,7 +5,6 @@ const config = require("./config.json")
 const bot = new Discord.Client()
 
 console.log(config.BOT_TOKEN)
-console.log(config.BOT_TOKEN)
 
 bot.on("ready", () => {
     console.log(`discord bot ready.`)
