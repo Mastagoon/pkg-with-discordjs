@@ -1,8 +1,12 @@
 const Discord = require("discord.js")
 const fs = require("fs")
 require("dotenv").config()
+const config = require("./confg.json")
 
 const bot = new Discord.Client()
+
+console.log(BOT_TOKEN)
+console.log(config.BOT_TOKEN)
 
 bot.on("ready", () => {
     console.log(`discord bot ready.`)
@@ -13,4 +17,4 @@ bot.on("message", (mes) => {
     if(mes.content === "hi") mes.reply("hey")
 })
 
-bot.login(process.env.BOT_TOKEN)
+bot.login(BOT_TOKEN)
